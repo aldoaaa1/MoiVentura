@@ -1,0 +1,49 @@
+section {
+  padding: 70px 0;
+}
+section > h2{
+  margin-top: 0;
+}
+header{
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header img{
+  width: 90%;
+  max-width: 250px;
+  animation: show1 1s forwards;
+  opacity: 0;
+}
+header h1{
+  animation: show1 1s forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+#categorias img, #mas_vendidos img{
+  filter: brightness(0.85);
+}
+#subscribe .form{
+  width: 90%;
+  max-width: 350px;
+  margin: auto;
+}
+
+@keyframes show1{
+  0%{
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
